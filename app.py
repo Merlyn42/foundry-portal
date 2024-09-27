@@ -11,7 +11,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import atexit
 
 # Initialize the Flask application
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 # Global cache to store instance data
 instance_data_cache = []
